@@ -17,15 +17,15 @@
   });
 
 
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-
-	};
-	fullHeight();
+	// var fullHeight = function() {
+	//
+	// 	$('.js-fullheight').css('height', $(window).height() * 1.7);
+	// 	$(window).resize(function(){
+	// 		$('.js-fullheight').css('height', $(window).height() * 1.7);
+	// 	});
+	//
+	// };
+	// fullHeight();
 
 	// loader
 	var loader = function() {
