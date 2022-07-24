@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+var func = function () {
     var mastheadheight = $('.ds-header').outerHeight();
     $(".ds-banner,.ds-main-section").css("margin-top", mastheadheight);
 
@@ -9,4 +9,7 @@ jQuery(document).ready(function ($) {
             $('.ds-header').removeClass('ds-fixed-header');
         }
     }).scroll();
-});
+};
+
+$(document).ready(func);
+$(window).resize(func);

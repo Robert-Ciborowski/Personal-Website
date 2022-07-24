@@ -108,7 +108,7 @@ svg, img {
     width: 100%;
     z-index: 5;
     background-color: #FFF;
-    padding: 70px 0;
+    padding: 30px 0;
     transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
@@ -215,10 +215,17 @@ svg, img {
     list-style: none;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
     margin: 0;
     padding: 0;
     margin-top: 46px;
+}
+
+.project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ds-numbervalulist li {
@@ -312,6 +319,7 @@ svg, img {
     padding: 17px 30px;
     border: 2px solid #F26464;
     border-radius: 60px;
+    margin-bottom: 30px;
 }
 
 .ds-button:hover {
@@ -365,9 +373,9 @@ svg, img {
     padding-right: 70px;
 }
 
-.ds-experience-list {
-    padding-top: 15px;
-}
+/*.ds-experience-list {*/
+/*    padding-top: 15px;*/
+/*}*/
 
 .ds-skinny-heading {
     font-size: 24px;
@@ -384,6 +392,7 @@ span.ds-year {
     font-size: 14px;
     font-weight: 700;
     padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 span.ds-department {
@@ -446,7 +455,7 @@ span.ds-tools {
     padding-top: 40px;
     padding-right: 70px;
     background-color: #F6F8FA;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .ds-work-list section {
@@ -571,6 +580,7 @@ span.ds-tools {
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
     font-size: 16px;
+    margin-bottom: 0px;
 }
 
 .ds-copyright a {
@@ -608,10 +618,9 @@ span.ds-tools {
         padding-right: 0;
     }
 
-    .ds-banner section h1 span {
-        padding-bottom: 0;
-    }
-
+    /*.ds-banner section h1 span {*/
+    /*    padding-bottom: 30px;*/
+    /*}*/
     .ds-banner section h1, .ds-work-det-title {
         font-size: 30px;
         line-height: 40px;
@@ -638,7 +647,7 @@ span.ds-tools {
     }
 
     .ds-numbervalulist-2 li {
-        margin-right: 0px;
+        margin-right: 30px;
     }
 
     .ds-numbervalulist-2 strong {
@@ -649,14 +658,13 @@ span.ds-tools {
         font-size: 14px;
     }
 
-    .ds-about-section {
-        padding-bottom: 60px;
-    }
-
+    /*.ds-about-section {*/
+    /*    padding-bottom: 0px;*/
+    /*}*/
     .ds-about-section p, .ds-work-content-sec p, .ds-work-content-sec li {
         font-size: 15px;
         line-height: 30px;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 
     .ds-skills-list li {
@@ -665,14 +673,12 @@ span.ds-tools {
         font-size: 14px;
     }
 
-    .ds-skills-section .col-12, .ds-experience-list .col-12 {
-        margin-bottom: 40px;
-    }
-
-    .ds-skills-section, .ds-work-section, .ds-experience-section {
-        padding-bottom: 0;
-    }
-
+    /*.ds-skills-section .col-12, .ds-experience-list .col-12 {*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+    /*.ds-skills-section, .ds-work-section, .ds-experience-section {*/
+    /*    padding-bottom: 0;*/
+    /*}*/
     .ds-experience-list section {
         padding-right: 0;
     }
@@ -698,10 +704,9 @@ span.ds-tools {
         font-size: 14px;
     }
 
-    .ds-footer section {
-        padding-bottom: 30px;
-    }
-
+    /*.ds-footer section {*/
+    /*    padding-bottom: 30px;*/
+    /*}*/
     .ds-button {
         padding: 11px 10px;
     }
@@ -724,7 +729,7 @@ span.ds-tools {
 
     .ds-work-list section {
         padding-right: 0;
-        padding-bottom: 30px;
+        /*padding-bottom: 30px;*/
     }
 }
 
@@ -743,7 +748,7 @@ span.ds-tools {
 
     .ds-work-list section {
         padding-right: 30px;
-        padding-bottom: 60px;
+        /*padding-bottom: 60px;*/
     }
 
 
