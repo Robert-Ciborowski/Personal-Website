@@ -99,6 +99,13 @@ svg, img {
     margin-bottom: 0.5rem;
 }
 
+.centered {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
 /*-----------------------------------------------------------------
   1. >>> Headr Style
 ----------------------------------------------------------------*/
@@ -108,7 +115,7 @@ svg, img {
     width: 100%;
     z-index: 5;
     background-color: #FFF;
-    padding: 30px 0;
+    padding: 5vmin 0;
     transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
@@ -116,7 +123,7 @@ svg, img {
 }
 
 .ds-header.ds-fixed-header {
-    padding: 20px 0;
+    padding: 5vmin 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -133,6 +140,17 @@ svg, img {
     color: #000;
     display: flex;
     align-items: center;
+    width: 6vmax;
+    height: 6vmax;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.ds-logo-p {
+    white-space: nowrap;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 4vmin;
 }
 
 .ds-logo span {
@@ -144,7 +162,7 @@ svg, img {
     background-color: #000;
     border-radius: 4px;
     color: #FFF;
-    font-size: 22px;
+    font-size: 1vw;
     font-weight: 600;
     text-align: center;
     margin-right: 12px;
@@ -191,8 +209,8 @@ svg, img {
   2. >>> Banner Style
 ----------------------------------------------------------------*/
 .ds-banner section {
-    padding-left: 70px;
-    padding-right: 100px;
+    padding-left: 6vw;
+    padding-right: 5vw;
 }
 
 .ds-banner section h1 span {
@@ -200,14 +218,14 @@ svg, img {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 16px;
-    padding-bottom: 30px;
+    font-size: 2vmax;
+    padding-bottom: 5vw;
 }
 
 .ds-banner section h1 {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4vmax;
+    /*line-height: 60px;*/
     color: #000;
 }
 
@@ -216,10 +234,10 @@ svg, img {
     display: flex;
     align-items: center;
     /*flex-wrap: wrap;*/
-    justify-content: center;
+    /*justify-content: center;*/
     margin: 0;
     padding: 0;
-    margin-top: 46px;
+    margin-top: 5vw;
 }
 
 .project-image {
@@ -278,11 +296,17 @@ svg, img {
     letter-spacing: 1px;
 }
 
+.ds-numbervalulist-2 img {
+    width: 6vmax;
+    height: 6vmax;
+    max-width: 30px;
+    max-height: 30px;
+}
+
 /*-----------------------------------------------------------------
   3. >>> About Style
 ----------------------------------------------------------------*/
 .ds-about-section {
-    padding-top: 30px;
     /*padding-bottom: 120px;*/
     padding-bottom: 0px;
 }
@@ -296,7 +320,7 @@ svg, img {
     font-size: 16px;
     border-bottom: 3px solid #F26464;
     padding-bottom: 7px;
-    margin-bottom: 23px;
+    margin-top: 5vw;
 }
 
 .ds-about-section p {
@@ -330,6 +354,10 @@ svg, img {
 .ds-arrow-button i {
     display: inline-block;
     vertical-align: middle;
+}
+
+.top-section {
+    flex-flow: row;
 }
 
 /*-----------------------------------------------------------------
@@ -445,10 +473,6 @@ span.ds-tools {
 /*-----------------------------------------------------------------
   6. >>> Work Style
 ----------------------------------------------------------------*/
-.ds-work-section {
-    padding-top: 30px;
-    padding-bottom: 80px;
-}
 
 .ds-work-list {
     padding-left: 70px;
@@ -591,13 +615,41 @@ span.ds-tools {
     color: #F26464;
 }
 
+.image-col {
+    /*height: 40vw;*/
+}
+
+.header-1-text {
+    align-self: center;
+}
+
+.ds-work-section {
+    margin-bottom: 5vw;
+}
+
 
 /*-------------------------------------------------------------------------------
  Responsive XS Style @media (max-width: 767px) 
 -------------------------------------------------------------------------------*/
 @media (max-width: 768px) {
+    .top-section {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .image-col {
+        /*height: 40%;*/
+        width: 80%;
+        margin-bottom: 5vw;
+    }
+
+    .header-1-text {
+        width: 100%;
+    }
+
     .ds-header, .ds-header.ds-fixed-header {
-        padding: 15px 0;
+        padding: 5vmin 0;
     }
 
     .ds-banner, .ds-about-section, .ds-skills-section, .ds-experience-section, .ds-work-section, .ds-work-details-section {
@@ -605,12 +657,12 @@ span.ds-tools {
         padding-right: 10px;
     }
 
-    .ds-logo {
+    .ds-logo-p {
         font-size: 0;
     }
 
     .ds-banner figure {
-        padding: 30px 0;
+        /*padding: 30px 0;*/
     }
 
     .ds-banner section {
@@ -621,13 +673,16 @@ span.ds-tools {
     /*.ds-banner section h1 span {*/
     /*    padding-bottom: 30px;*/
     /*}*/
-    .ds-banner section h1, .ds-work-det-title {
-        font-size: 30px;
-        line-height: 40px;
+    /*.ds-banner section h1, .ds-work-det-title {*/
+    /*    font-size: 30px;*/
+    /*    line-height: 40px;*/
+    /*}*/
+    .ds-banner section h1 {
+        font-size: 6vw;
     }
 
     .ds-numbervalulist {
-        margin-top: 20px;
+        margin-top: 5vw;
     }
 
     .ds-numbervalulist li {
